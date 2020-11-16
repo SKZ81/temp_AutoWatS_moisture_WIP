@@ -609,4 +609,31 @@ Wire Wire Line
 Wire Wire Line
 	6100 2950 6100 3250
 Connection ~ 6100 3250
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5FB3663B
+P 8400 1300
+F 0 "J3" H 8480 1292 50  0000 L CNN
+F 1 "Conn_01x04" H 8480 1201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8400 1300 50  0001 C CNN
+F 3 "~" H 8400 1300 50  0001 C CNN
+	1    8400 1300
+	1    0    0    -1  
+$EndComp
+Text Label 7700 1200 0    50   ~ 0
+Excitation
+Text Label 7700 1300 0    50   ~ 0
+SENSOR_TRACK
+Text Label 7700 1500 0    50   ~ 0
+MISO_SENSE_HIGH
+Text Label 7700 1400 0    50   ~ 0
+SENSE_LOW
+Wire Wire Line
+	7700 1200 8200 1200
+Wire Wire Line
+	7700 1300 8200 1300
+Wire Wire Line
+	7700 1400 8200 1400
+Wire Wire Line
+	8200 1500 7700 1500
 $EndSCHEMATC
