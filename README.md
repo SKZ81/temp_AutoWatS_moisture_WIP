@@ -1,21 +1,29 @@
 # Routing a custom capacitive "i2c-moisture_sensor"
 
-*This is not a new **design**, but a renewed **layout** of the same thing (**/me** eyeballz **MrFareinheit** & **nohit**)*
+**NOTE:** this is **NOT** an entirely new design, just a new layout/routing of an open source concept.
 
 ## Introduction
 
 ### Context
 
-@Miceuz has released a few open source/hardware projects related to sensing moisture level in soil, using capacitive techniques to avoid corrosition.
+**@Miceuz** has released a few open source/hardware projects related to sensing moisture level in soil, using capacitive techniques to avoid corrosition of the sensor's tracks.
+
 For instance the [Chirp!](https://github.com/Miceuz/PlantWateringAlarm), that has been heavily cloned...
 
-Personnaly I came across this project "thanks to" AZ Delivery (a german shop on Amazon, I don't recommand them at all), that had a deal for 3rd party testers : 1) buy a thing 2) write a review 3) get a full refund. I'm still waiting for step 3 completion.
+Personnaly I came across this project "thanks to" **AZ Delivery** (a german shop on Amazon. I don't recommand them at all), that had a deal for 3rd party testers : 1) buy a thing 2) write a review 3) get a full refund.
+
+But let's the gnome explain that process better than I could :
+
+![gnome business plan](docs/AZDelivery-gnomes-business-plan.png)
+
+I'm still waiting for step 3 completion.
 
 Note that the [Chirp!](https://github.com/Miceuz/PlantWateringAlarm) is intented to work as a standalone item : it embeds a battery and a buzzer to autonomously report low watering level of the plant soil. It even measures lighting level using an impressive technique implying applying a reverse voltage on the LED that otherwise is used to indicate the [Chirp!](https://github.com/Miceuz/PlantWateringAlarm)
 
 AZ Delivery claims the item is "delivered with an ebook" (I knew i meant : you'll get an email with the PDF URL... If you're lucky, or you can search by yourself on our website...)
+Just for reference [here is the amazon UK webpage for this item](https://www.amazon.co.uk/AZDelivery-Plant-Watering-Alerter-Parent/dp/B086V7ZKHF?th=1)
 
-Fake Ad, I found myself actually desperate for any documentation on how to speak to the device, then a found an obscure comment about the [Chirp!](https://github.com/Miceuz/PlantWateringAlarm) that I did not understood at first... The phrasing did made it obvious that "chirp" was designating a project : github repo ! But when it came it was my last clue, I gave it a chance in a SE, and taadaaaa !
+But this is "Fake Ad", as I found myself actually desperate for any documentation on how to speak to the device. Then I found an obscure comment about the [Chirp!](https://github.com/Miceuz/PlantWateringAlarm) that I did not understood at first. Indeed, the phrasing didn't make it obvious that "**Chirp!**" was designating a (OSH) project... But when it came out that it was my last clue, I gave it a chance in a SE, and taadaaaa !
 
 
 Here we we'll more focus on cloning the i²c slave version(sol called "[i2c-moisture-sensor](https://github.com/Miceuz/i2c-moisture-sensor)".
